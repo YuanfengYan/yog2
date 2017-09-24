@@ -7,9 +7,23 @@ module.exports.get = function (id,req) {
         return ;
 };
 module.exports.getMock = function (id,req) {
-	console.log('MOCK')
+	console.log('MOCK1')
     return yog.ralPromise('DEMO', {    //promise请使用yog.ralPromise
-        path: '/api/user',
+        path: '/mock/test.json',
         method: 'GET',
+        data:{
+        	
+        }
+    })
+};
+
+
+module.exports.search = function (name, region) {
+	console.log(123331)
+    return yog.ralP('MAPAPI', {
+        data: {
+            region: region||'',
+            query: name||''
+        }
     });
 }

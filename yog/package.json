@@ -15,6 +15,9 @@
   "license": "BSD",
   "dependencies": {
     "debuglog": "1.0.1",
-    "yog2-kernel": "1.9.1"
+    "yog2-kernel": "1.9.1",
+    
+    "lodash": "2.4.1",
+    "moment": "^2.13.0"
   }
 }

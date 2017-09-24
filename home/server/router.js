@@ -18,7 +18,7 @@ module.exports = function(router){
         console.log('中间件');//添加公共加载部分数据
         next();
     });
-    // router.route('/').get(router.action('list').get);
+    router.route('/').get(router.action('list').get);
     router.route('/list').get(router.action('list').get);
     router.route('/test').get(router.action('test').get);
  }

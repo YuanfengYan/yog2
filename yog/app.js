@@ -24,6 +24,7 @@ server.on('connection', function (socket) {
     // disable nagle
     socket.setNoDelay(true);
 });
+
 // 仅在 Node.js 6.x开启这个功能 https://github.com/nodejs/node/issues/7126
 if (parseInt(process.versions.node.split('.')[0], 10) >= 6) {
     server.on('clientError', function (err, socket) {
